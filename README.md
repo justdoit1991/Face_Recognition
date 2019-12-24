@@ -42,8 +42,8 @@ detector = MTCNN()
 model_path = os.getcwd() + '\\model\\facenet.pb'
 fe = FeatureExtractModel(model_path, gpu_memory_fractio=0.6)
 
-## 3.who is he/she?
-test_img = 'digiwin_couple.jpg'
+## who is he/she?
+test_img = 'test.jpg'
 img = cv2.imread(os.getcwd() + '\\test\\' + test_img)  # load image(avoid chinese path)
 
 # avoid image too big
