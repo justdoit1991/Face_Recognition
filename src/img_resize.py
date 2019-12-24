@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Dec 19 16:54:24 2019
-
-@author: Felix
-"""
-
 # import module
 import cv2
 
