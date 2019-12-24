@@ -1,23 +1,3 @@
-﻿# -*- coding: utf-8 -*-
-"""
-Created on Tue Dec 17 14:03:00 2019
-
-@author: Felix
-
-# Requirments
-keras 2.2.0
-tensorflow 1.9.0
-opencv-python 4.1.2.30
-
-# Process
-1. Set model path
-2. Use mtcnn find boundingbox
-3. Extracting face from image based on boundingbox
-4. Resize => 160*160
-5. Use infer function calculation feature vector
-6. Calculate cos distance between faces (Suggested threshold between 0.21 to 0.23)
-"""
-
 # import module
 import os
 import cv2
@@ -85,11 +65,8 @@ elif action == 2:
 #picture_base.to_csv(os.getcwd() + '\\picture_base.csv') 
 '''
 
-import time
-start = time.time()  
-
 ## 3.who is he/she?
-test_img = 'digiwin_couple.jpg'
+test_img = 'test.jpg'
 img = cv2.imread(os.getcwd() + '\\test\\' + test_img)  # load image(avoid chinese path)
 
 # avoid image too big
@@ -130,18 +107,3 @@ for i in range(0, len(face_list)):
 
 # save image
 cv2.imwrite("C:/Users/Felix/Desktop/result.jpg", img)
-
-end = time.time()  
-end - start
-
-'''    
-Mtcnn是在face in the wild和celebA兩個資料集訓練的 
-可以從觀察裡面的資料來了解模型
-
-用Open CV的cv2.resize縮放圖片時可選擇演算法:   
-放大時 => interpolation = cv2.INTER_CUBIC
-縮小時 => interpolation = cv2.INTER_AREA
-
-提醒: 此程式使用tensorflow 1.9.0版 , 所以keras要使用2.2.0版
-      (對應版本請參考: https://reurl.cc/M7gx1m)
-'''
