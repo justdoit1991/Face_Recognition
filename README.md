@@ -24,7 +24,7 @@ opencv-python 4.1.2.30
 ***
 
 ## Example
-```python 
+```
 # import module
 import os
 import cv2
