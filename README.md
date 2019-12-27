@@ -6,6 +6,7 @@ E-mail : [felix800828@gmail.com](felix800828@gmail.com) <br>
 
 ## Requirments
 ```
+mtcnn 0.1.0
 keras 2.2.0
 tensorflow 1.9.0
 opencv-python 4.1.2.30
