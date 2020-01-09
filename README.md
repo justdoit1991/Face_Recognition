@@ -18,7 +18,7 @@ opencv-python 4.1.2.30
 2. Use mtcnn find boundingbox
 3. Extracting face from image based on boundingbox
 4. Resize => 160*160
-5. Use infer function calculation feature vector
+5. Use infer function calculation embedding
 6. Calculate cos distance between faces (Suggested threshold between 0.21 to 0.23)
 ```
 
